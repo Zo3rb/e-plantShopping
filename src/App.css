@@ -1,0 +1,93 @@
+/* Paradise Nursery landing page — background image */
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1576001888565-739929296ab1?q=80&w=1600&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.landing-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.landing-content {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  padding: 2rem;
+}
+
+.landing-page h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  letter-spacing: -1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.landing-tagline {
+  font-size: 1.35rem;
+  margin-bottom: 2.25rem;
+  opacity: 0.95;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.btn-get-started {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 2.25rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: #15803d;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-get-started:hover {
+  background: #166534;
+}
+
+.btn-get-started:active {
+  transform: scale(0.97);
+}
+
+.landing-nav {
+  position: relative;
+  z-index: 1;
+  margin-top: 3rem;
+  display: flex;
+  gap: 1.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.landing-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.landing-nav a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
